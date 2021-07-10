@@ -1,0 +1,133 @@
+body, html {
+  height: 100%;
+  background-color: hsl(273, 75%, 66%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 12px;
+}
+.container{
+/*	background-color: hsl(240, 5%, 91%);
+	  background-image: url('bg-pattern-desktop.svg');
+	  background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;*/
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+margin-top: 10%;
+
+      
+
+}
+.image{
+/*background-color: hsl(240, 5%, 91%);*/
+background-color: white;
+	  background-image: url('bg-pattern-desktop.svg');
+	  background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-right: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border-bottom-left-radius: 3%;
+      border-top-left-radius: 3%;
+}
+
+.faq{
+	background-color: white;
+	border-bottom-right-radius: 3%;
+      border-top-right-radius: 3%;
+      padding-bottom: 5%;
+}
+.accordion-item{
+	background-color: white;
+	border-radius: 0.4rem;
+	margin-bottom: 1rem;
+	padding: .5rem;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+
+}
+h3{
+	font-weight: 700;
+	font-size: 35px;
+	padding-top: 5rem;
+}
+.accordion-link{
+	color: hsl(240, 6%, 50%);
+	text-decoration: none;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*padding: 1rem 0;*/
+	font-size: 16px;
+}
+.accordion-link:hover{
+	color: hsl(14, 88%, 65%);
+}
+ion-icon{
+	padding: 0.5rem;
+	color: hsl(14, 88%, 65%);
+	
+
+}
+.hide{
+	display: none;
+}
+.answer{
+	max-height: 0;
+	overflow: hidden;
+}
+.answer p{
+	color:  hsl(240, 6%, 50%);
+
+}
+.accordion-item:target .accordion-link{
+	color: black;
+	font-weight: 700;
+}
+.accordion-item:target .answer{
+	max-height: 20rem;
+
+}
+.accordion-item:target .accordion-link .plus {
+	display: none;
+}
+.accordion-item:target .accordion-link .hide {
+	display: block;
+}
+@media screen and (max-width: 375px){
+	.container{
+
+      
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+margin-top: 10%;
+}
+.image{
+/*background-color: hsl(240, 5%, 91%);*/
+background-color: white;
+	  background-image: url('bg-pattern-desktop.svg');
+	  background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-right: 5%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 0;
+      /*border-bottom-left-radius: 3%;
+      border-top-left-radius: 3%;*/
+}
+.faq{
+	background-color: white;
+	/*border-bottom-right-radius: 3%;
+      border-top-right-radius: 3%;*/
+      border-radius: 0;
+      padding-bottom: 5%;
+}
+}
